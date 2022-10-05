@@ -2,13 +2,12 @@ package ru.job4j.condition;
 
 public class ChessBoard {
     public static int way(int x1, int y1, int x2, int y2) {
-        if (isValid(x1) && isValid(x2)
+
+        int rsl = (isValid(x1) && isValid(x2)
                 && isValid(y1) && isValid(y2)
-                && (x1 != x2) && Math.abs(x2 - x1) == Math.abs(y2 - y1)) {
-            return Math.abs(y2 - y1);
-        } else {
-            return 0;
-        }
+                && (x1 != x2)
+                && Math.abs(x2 - x1) == Math.abs(y2 - y1)) ? Math.abs(y2 - y1) : 0;
+        return rsl;
     }
 
     private static boolean isValid(int coordinate) {
