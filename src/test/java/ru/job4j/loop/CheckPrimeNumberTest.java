@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class CheckPrimeNumberTest {
 
     @Test
-    public void when5() {
+    public void when5()  {
         int number = 5;
         boolean rsl = CheckPrimeNumber.check(number);
         assertThat(rsl).isTrue();
