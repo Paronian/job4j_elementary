@@ -1,7 +1,5 @@
 package ru.job4j.array;
 
-//import java.lang.Math;
-
 public class Square {
     public static int[] calculate(int bound) {
         int[] rsl = new int[bound];
