@@ -9,19 +9,16 @@ public class Machine {
         int delta = money - price;
         int i = 0;
         for (int index = 0; index < coins.length; index++) {
-            if (delta == 0) {
-                break;
-            } else {
-                while (delta - coins[index] >= 0) {
-                    delta = delta - coins[index];
-                    tempArray[i] = coins[index];
-                    i++;
-                }
+            while (delta - coins[index] >= 0) {
+                delta = delta - coins[index];
+                tempArray[i] = coins[index];
+                i++;
             }
         }
         int[] result = Arrays.copyOf(tempArray, i);
         return result;
     }
 }
+
 
 
