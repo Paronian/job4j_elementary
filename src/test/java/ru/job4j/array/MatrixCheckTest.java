@@ -10,7 +10,7 @@ class MatrixCheckTest {
     public void whenHasMonoHorizontal() {
         char[][] input = {
                 {' ', ' ', ' '},
-                {'Õ', 'X', 'X'},
+                {'X', 'X', 'X'},
                 {' ', ' ', ' '},
         };
         int row = 1;
