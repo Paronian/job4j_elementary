@@ -15,8 +15,7 @@ public class Machine {
                 i++;
             }
         }
-        int[] result = Arrays.copyOf(tempArray, i);
-        return result;
+        return Arrays.copyOf(tempArray, i);
     }
 }
 
