@@ -11,7 +11,7 @@ public class JavaNameValidator {
         } else {
             for (int i = 0; i < codeArray.length; i++) {
                 int code = name.codePointAt(i);
-                if (i == 0 && isLowerLatinLetter(code) == false) {
+                if (i == 0 && !isLowerLatinLetter(code)) {
                     result = false;
                     break;
                 } else {
