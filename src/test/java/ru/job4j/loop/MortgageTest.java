@@ -10,7 +10,7 @@ public class MortgageTest {
         int amount = 1000;
         int salary = 1200;
         double percent = 1;
-        int rsl = Mortgage.year(amount, salary, percent);
+        int rsl = Mortgage.calcDebt(amount, salary, percent);
         int expected = 1;
         assertThat(rsl).isEqualTo(expected);
     }
@@ -20,7 +20,7 @@ public class MortgageTest {
         int amount = 100;
         int salary = 120;
         double percent = 50;
-        int result = Mortgage.year(amount, salary, percent);
+        int result = Mortgage.calcDebt(amount, salary, percent);
         int expected = 2;
         assertThat(result).isEqualTo(expected);
     }
@@ -30,7 +30,7 @@ public class MortgageTest {
         int amount = 1000;
         int salary = 1200;
         double percent = 20;
-        int result = Mortgage.year(amount, salary, percent);
+        int result = Mortgage.calcDebt(amount, salary, percent);
         int expected = 1;
         assertThat(result).isEqualTo(expected);
     }

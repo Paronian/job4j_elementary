@@ -1,8 +1,7 @@
 package ru.job4j.condition;
 
 public class ChessBoard {
-    public static int way(int x1, int y1, int x2, int y2) {
-
+    public static int checkWay(int x1, int y1, int x2, int y2) {
         return (isValid(x1) && isValid(x2)
                 && isValid(y1) && isValid(y2)
                 && (x1 != x2)
@@ -14,6 +13,6 @@ public class ChessBoard {
     }
 
     public static void main(String[] args) {
-        System.out.println(way(6, 7, 1, 2));
+        System.out.println(checkWay(6, 7, 1, 2));
     }
 }
