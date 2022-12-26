@@ -8,7 +8,6 @@ public class Machine {
         int[] temp = new int[100];
         int delta = money - price;
         int i = 0;
-
         for (int index = 0; index < coins.length; index++) {
             while (delta - coins[index] >= 0) {
                 delta = delta - coins[index];

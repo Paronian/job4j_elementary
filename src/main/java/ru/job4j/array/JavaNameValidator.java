@@ -6,7 +6,6 @@ public class JavaNameValidator {
     public static boolean isNameValid(String name) {
         boolean result = !name.isEmpty() && isLowerCase(name.codePointAt(0))
                                          && !isDigit(name.codePointAt(0));
-
         if (result) {
             for (int i = 1; i < name.length(); i++) {
                 int code = name.codePointAt(i);
