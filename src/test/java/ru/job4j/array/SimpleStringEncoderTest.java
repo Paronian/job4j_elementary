@@ -55,7 +55,7 @@ class SimpleStringEncoderTest {
     }
 
     @Test
-    void whenStringaaabbbcccThenResulta3b3c3() {
+    void whenStringaaabbbcccThenResulta3b3c3()  {
         String input = "aaabbbccc";
         String expected = "a3b3c3";
         String result = SimpleStringEncoder.encode(input);
